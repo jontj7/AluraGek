@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Producto</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h1>AGREGAR PRODUCTO</h1>
+            <form id="productForm">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" placeholder="Nombre..." required>
+
+                <label for="precio">Precio:</label>
+                <input type="number" id="precio" step="0.01" placeholder="Precio..." required>
+
+                <label for="imagen">Imagen:</label>
+                <input type="file" id="imagen" accept="image/*" required>
+
+                <div class="buttons">
+                    <button type="submit">Enviar</button>
+                    <button type="button" id="limpiarBtn">Limpiar</button>
+                </div>
+            </form>
+        </div>
+        <div class="product-container">
+            <h2>Mis Productos</h2>
+            <div id="productDisplay" class="product-grid">
+                <!-- Productos se agregarán dinámicamente aquí -->
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div>AluraWeek</div>
+        <div>Desarrollado por <a href="#">Jonathan Martinez</a></div>
+        <div>ALURA LATAM-2024</div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
